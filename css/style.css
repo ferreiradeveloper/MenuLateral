@@ -1,0 +1,85 @@
+:root {
+    --verdeOscuro: #2a8060;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+hyml {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Popping', sans-serif;
+}
+
+/* proyecto */
+.contenedor-general {
+    width: 100%;
+    position: relative;
+}
+
+.contenedor-menu {
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    background-color: var(--verdeOscuro);
+    z-index: 2;
+    top: -8rem;
+    left: -8rem;    
+}
+
+i.fas.fa-bars {
+    color: white;
+    font-size: 6rem;
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    cursor: pointer;
+}
+
+.barra-lateral {
+    position: absolute;
+    top: 0;
+    width: 24rem;
+    height: 100vh;
+    background-color: var(--verdeOscuro);
+    opacity: 0;
+    left: -24rem;
+    transition: .3s ease-in;
+}
+
+.barra-lateral ul {
+    width: 100%;
+    margin: 10rem auto 0 auto;    
+}
+
+.barra-lateral ul li {
+    color: white;
+    list-style: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+    transition: .3s ease-in-out;
+}
+
+.barra-lateral ul li:hover {
+    background-color: white;
+    color: var(--verdeOscuro);
+}
+
+.fas.fa-times {
+    color: white;
+    font-size: 6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.activo {
+    opacity: 1;
+    left: 0;
+    z-index: 5;
+}
